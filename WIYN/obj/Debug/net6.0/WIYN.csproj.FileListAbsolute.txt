@@ -1,0 +1,15 @@
+C:\Users\Winston\Desktop\Projects\Project\WIYN\bin\Debug\net6.0\WIYN.exe
+C:\Users\Winston\Desktop\Projects\Project\WIYN\bin\Debug\net6.0\WIYN.deps.json
+C:\Users\Winston\Desktop\Projects\Project\WIYN\bin\Debug\net6.0\WIYN.runtimeconfig.json
+C:\Users\Winston\Desktop\Projects\Project\WIYN\bin\Debug\net6.0\WIYN.dll
+C:\Users\Winston\Desktop\Projects\Project\WIYN\bin\Debug\net6.0\WIYN.pdb
+C:\Users\Winston\Desktop\Projects\Project\WIYN\obj\Debug\net6.0\WIYN.csproj.AssemblyReference.cache
+C:\Users\Winston\Desktop\Projects\Project\WIYN\obj\Debug\net6.0\WIYN.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Winston\Desktop\Projects\Project\WIYN\obj\Debug\net6.0\WIYN.AssemblyInfoInputs.cache
+C:\Users\Winston\Desktop\Projects\Project\WIYN\obj\Debug\net6.0\WIYN.AssemblyInfo.cs
+C:\Users\Winston\Desktop\Projects\Project\WIYN\obj\Debug\net6.0\WIYN.csproj.CoreCompileInputs.cache
+C:\Users\Winston\Desktop\Projects\Project\WIYN\obj\Debug\net6.0\WIYN.dll
+C:\Users\Winston\Desktop\Projects\Project\WIYN\obj\Debug\net6.0\refint\WIYN.dll
+C:\Users\Winston\Desktop\Projects\Project\WIYN\obj\Debug\net6.0\WIYN.pdb
+C:\Users\Winston\Desktop\Projects\Project\WIYN\obj\Debug\net6.0\WIYN.genruntimeconfig.cache
+C:\Users\Winston\Desktop\Projects\Project\WIYN\obj\Debug\net6.0\ref\WIYN.dll
