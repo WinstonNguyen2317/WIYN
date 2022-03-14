@@ -55,9 +55,11 @@ namespace WIYN
                     Console.WriteLine("{0} * {1} = {2}",num1, num2, result);
                     result = num1 / num2;
                     Console.WriteLine("{0} % {1} = {2}",num1, num2, result);
-
-                    Console.WriteLine("Press any key to exit");
-                    Console.ReadKey();
+                    {
+                        Console.WriteLine("Press any key to close");
+                        Console.ReadKey();
+                        Environment.Exit(0);
+                    }
                 }
                 else
                 {
@@ -65,10 +67,9 @@ namespace WIYN
                 }
                 answer = Console.ReadLine();
                
-            } 
-            while (answer != "N" && answer != "Y");
-           
-           
+            }
+             while(answer != "N" && answer != "Y");
+            
         }
     }
 
