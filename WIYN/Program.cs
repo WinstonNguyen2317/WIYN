@@ -36,36 +36,41 @@ namespace WIYN
             {
                 if (answer == "N")
                 {
-                    Console.WriteLine("Okay " + username);
+                    Console.WriteLine("Okay, " + username);
                     return;
                 }
                 else if (answer == "Y")
                 {
+                    string[] tokens = Console.ReadLine().Split();
+                    int a = int.Parse(tokens[0]);
+                    int b = int.Parse(tokens[1]);
+                    //user input for two integers c#
+
                     double num1, num2, result;
-                    Console.WriteLine("Enter the first Number ");
-                    num1 = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Enter the second Number ");
-                    num2 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Please enter in two numbers");
+                    var integers = Console.ReadLine().Split().Select(s => int.Parse(s)).ToArray();
+                    int first = integers[0];
+                    int second = integers[1];
+
 
                     result = num1 + num2;
-                    Console.WriteLine("{0} + {1} = {2}",num1,num2,result);
+                    Console.WriteLine("{0} + {1} = {2}", num1, num2, result);
                     result = num1 - num2;
-                    Console.WriteLine("{0} - {1} = {2}",num1, num2, result);
-                    result = num1 * num2 ;
-                    Console.WriteLine("{0} * {1} = {2}",num1, num2, result);
+                    Console.WriteLine("{0} - {1} = {2}", num1, num2, result);
+                    result = num1 * num2;
+                    Console.WriteLine("{0} * {1} = {2}", num1, num2, result);
                     result = num1 / num2;
-                    Console.WriteLine("{0} % {1} = {2}",num1, num2, result);
-                    {
-                        Console.WriteLine("Press any key to close");
-                        Console.ReadKey();
-                        Environment.Exit(0);
-                    }
+                    Console.WriteLine("{0} % {1} = {2}", num1, num2, result);
+
+                    Console.WriteLine("Press any key to close");
+                    Console.ReadKey();
+
+
                 }
                 else
                 {
                     Console.WriteLine("Invalid input! Please try again!");
-                }
-                answer = Console.ReadLine();
+                } 
                
             }
              while(answer != "N" && answer != "Y");
