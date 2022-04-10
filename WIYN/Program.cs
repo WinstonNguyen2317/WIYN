@@ -34,6 +34,8 @@ namespace WIYN
 
             do
             {
+                Console.WriteLine("Hi, " + username + "! " + " Do you want to play a game? Y/N");
+                answer = Console.ReadLine();
                 if (answer == "N")
                 {
                     Console.WriteLine("Okay, " + username);
@@ -41,31 +43,25 @@ namespace WIYN
                 }
                 else if (answer == "Y")
                 {
-                    string[] tokens = Console.ReadLine().Split();
+                    string[] tokens = string[10]
+                    double first, second, result;
+                    Console.WriteLine("Please enter two numbers:");
+                    first = Convert.ToInt32(Console.ReadLine());
+                    second = Convert.ToInt32(Console.ReadLine());
+
+                    
                     int a = int.Parse(tokens[0]);
                     int b = int.Parse(tokens[1]);
-                    //user input for two integers c#
+                    tokens[0] = answer;
 
-                    double num1, num2, result;
-                    Console.WriteLine("Please enter in two numbers");
-                    var integers = Console.ReadLine().Split().Select(s => int.Parse(s)).ToArray();
-                    int first = integers[0];
-                    int second = integers[1];
-
-
-                    result = num1 + num2;
-                    Console.WriteLine("{0} + {1} = {2}", num1, num2, result);
-                    result = num1 - num2;
-                    Console.WriteLine("{0} - {1} = {2}", num1, num2, result);
-                    result = num1 * num2;
-                    Console.WriteLine("{0} * {1} = {2}", num1, num2, result);
-                    result = num1 / num2;
-                    Console.WriteLine("{0} % {1} = {2}", num1, num2, result);
-
-                    Console.WriteLine("Press any key to close");
-                    Console.ReadKey();
-
-
+                    result = first + second;
+                    Console.WriteLine("{0} + {1} = {2}", first, second, result);
+                    result = first - second;
+                    Console.WriteLine("{0} - {1} = {2}", first, second, result);
+                    result = first * second;
+                    Console.WriteLine("{0} * {1} = {2}", first, second, result);
+                    result = first / second;
+                    Console.WriteLine("{0} % {1} = {2}", first, second, result);
                 }
                 else
                 {
@@ -73,7 +69,7 @@ namespace WIYN
                 } 
                
             }
-             while(answer != "N" && answer != "Y");
+             while(answer != "N" || answer != "Y");
             
         }
     }
