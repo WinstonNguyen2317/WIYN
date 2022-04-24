@@ -12,7 +12,6 @@ After I enter in two numbers, the program will display:
 "number1 / number2 = " the quotient
 "number1^number2 = " number1 to the power of number2
 Afterwards, the program will wait for me to press any key to close.
-
 The program should never crash no matter what input I give it. */
 
 
@@ -24,35 +23,31 @@ namespace WIYN
     {
         static void Main(string[] args)
         {
-
-            string answer;
+            string choice;
+            //double[] numbers;
+            double first, second, result;
             Console.WriteLine("What is your name?");
             string username = Console.ReadLine();
-            Console.WriteLine("Hi, " + username + "! " + " Do you want to play a game? Y/N");
-            answer = Console.ReadLine();
-
-
-            do
+            Console.WriteLine("Hi, " + username + "!" + " Do you want to play a game? Y/N");
+            choice = "";
+            while (choice != "Y")
             {
-                Console.WriteLine("Hi, " + username + "! " + " Do you want to play a game? Y/N");
-                answer = Console.ReadLine();
-                if (answer == "N")
+                choice = Console.ReadLine();
+                if (choice == "N")
                 {
                     Console.WriteLine("Okay, " + username);
                     return;
                 }
-                else if (answer == "Y")
-                {
-                    string[] tokens = string[10]
-                    double first, second, result;
-                    Console.WriteLine("Please enter two numbers:");
-                    first = Convert.ToInt32(Console.ReadLine());
-                    second = Convert.ToInt32(Console.ReadLine());
 
-                    
-                    int a = int.Parse(tokens[0]);
-                    int b = int.Parse(tokens[1]);
-                    tokens[0] = answer;
+                else if (choice == "Y")
+                {
+                    Console.WriteLine("Please enter two numbers");
+                    string inputstring = Console.ReadLine();
+                    string[] words = inputstring.Split(' ');
+                    first = Convert.ToInt64(words[0]);
+                    second = Convert.ToInt64(words[1]);
+
+                    Console.WriteLine(first + second);
 
                     result = first + second;
                     Console.WriteLine("{0} + {1} = {2}", first, second, result);
@@ -65,15 +60,21 @@ namespace WIYN
                 }
                 else
                 {
-                    Console.WriteLine("Invalid input! Please try again!");
-                } 
-               
+                    Console.WriteLine("Invalid Input! Please try again!");
+
+                }
             }
-             while(answer != "N" || answer != "Y");
-            
+
+
+
+
+
+
+
+
+
+
+
         }
     }
-
 }
-
-
